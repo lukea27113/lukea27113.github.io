@@ -2,6 +2,8 @@
 <!-- Created with https://packager.turbowarp.org/ -->
 <html>
 <head>
+  <script>var customUsername = prompt("Username", "player####".replace(/#/g, () => Math.floor(Math.random() * 10)))
+  </script>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <!-- We only include this to explicitly loosen the CSP of various packager environments. It does not provide any security. -->
@@ -212,7 +214,7 @@
       };
       setProgress(0.1);
 
-      scaffolding.setUsername(prompt("Username", "player####".replace(/#/g, () => Math.floor(Math.random() * 10))));
+      scaffolding.setUsername(customUsername);
       scaffolding.setAccentColor("#ff4c4c");
       scaffolding.addCloudProvider(new Scaffolding.Cloud.WebSocketProvider("wss://clouddata.turbowarp.org", "523967150"));
 
