@@ -212,9 +212,8 @@
       };
       setProgress(0.1);
 
-      scaffolding.setUsername("player####".replace(/#/g, () => Math.floor(Math.random() * 10)));
+      scaffolding.setUsername(prompt("Username", "player####".replace(/#/g, () => Math.floor(Math.random() * 10))));
       scaffolding.setAccentColor("#ff4c4c");
-
       scaffolding.addCloudProvider(new Scaffolding.Cloud.WebSocketProvider("wss://clouddata.turbowarp.org", "523967150"));
 
       const greenFlagButton = document.createElement('img');
