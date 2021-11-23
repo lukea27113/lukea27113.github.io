@@ -12,3 +12,6 @@ headerPadding {
   color: white;
   font-size: 30px;
 }
+centerText {
+ text-align: center;
+}
