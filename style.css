@@ -12,6 +12,6 @@ logo {
   color: white;
   font-size: 30px;
 }
-centeredText {
+.centeredText {
  text-align: center;
 }
