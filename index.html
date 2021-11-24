@@ -9,7 +9,7 @@
   <body>
     <div class="popup">
         <h2>Complete the CAPTCHA to make sure you are not a robot</h2>
-      <form onsubmit="return close()">
+      <form onsubmit="document.querySelector(".popup").style.display = "none";">
    <div class="h-captcha" data-sitekey="e3e2a408-fd8c-45ab-b50b-244a311b83bb"></div>             
                 <div><input type="submit" /></div>
             </form>
