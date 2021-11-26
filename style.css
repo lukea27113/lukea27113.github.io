@@ -48,6 +48,9 @@ h1 {
   color: white;
   font-size: 30px;
 }
-.centeredText {
+.examples {
+ text-align: center;
+}
+.projects {
  text-align: center;
 }
